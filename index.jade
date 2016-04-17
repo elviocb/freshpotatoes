@@ -4,14 +4,23 @@ head
   meta(charset="UTF-8")
   title Project Name
   link(rel="stylesheet", href="./assets/css/index.css")
+  link(rel="stylesheet", href="./bower_components/fontawesome/css/font-awesome.min.css")
 body
-  .Grid.Grid--gutters.large-Grid--fit.Grid--full
-    .Grid-cell
-      .box Loren Ipsun lla wier wkdmak wiuwd wkmdm wkdmiwmmd wkdmmwd  kwkw dkwjdw
-    .Grid-cell
-      .box Some B content akkas loren ipsum mussundis
-    .Grid-cell
-      .box Some C
+  .header-section
+    .container
+      .header
+        .flex-row.justify-content
+          .header-item.header-logo
+            h3.strong fresh
+            | potatoes
+          .header-item
+            .flex-row.header--box
+              .header-item.header-item--separator.v-expanded
+                .flex-row
+                  i.fa.fa-user.fa-2x.menu-ic--text.menu-ic--white
+                  span Hello, user!
+              .header-item.header-item--separator.last.v-expanded
+                  i.fa.fa-search.fa-2x.menu-ic.menu-ic--white
 
 
 
