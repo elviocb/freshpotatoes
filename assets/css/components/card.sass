@@ -1,6 +1,10 @@
 $feed-item-left-spacing: 78px
 $notification-item-left-spacing: 58px
 
+// Media Queries
+$card-feed-screen: "only screen and (max-width : 1080px)"
+$card-notification-screen: "only screen and (max-width : 1110px)"
+
 .cards-container
   margin-top: $space-larger
 
@@ -48,9 +52,18 @@ $notification-item-left-spacing: 58px
     height: 220px
     top: -22px
     right: 20px
+    @media #{$card-feed-screen}
+      width: 155px
+      height: 220px
+      position: relative
+      top: 0
+      margin-left: 50%
+      left: -75px
   &.notification
     width: auto
     height: auto
+    @media #{$card-notification-screen}
+      display: none
 
 
 .card-item-left

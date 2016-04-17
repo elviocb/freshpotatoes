@@ -146,6 +146,9 @@ table {
 .semi-strong {
   font-weight: 600; }
 
+.expanded {
+  width: 100%; }
+
 /* Default ______________________ */
 .strong {
   font-weight: bold; }
@@ -163,6 +166,26 @@ table {
 .justify-content {
   justify-content: space-between; }
 
+a.btn, button.btn, input[type=submit].btn {
+  display: inline-block;
+  padding: 0px 15px;
+  text-align: center;
+  height: 54px;
+  line-height: 54px;
+  font-family: "open sans", "Helvetica";
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+  white-space: nowrap; }
+  a.btn.btn-large, button.btn.btn-large, input[type=submit].btn.btn-large {
+    height: 55px;
+    line-height: 55px; }
+  a.btn:focus, button.btn:focus, input[type=submit].btn:focus {
+    outline: none; }
+  a.btn.primary, button.btn.primary, input[type=submit].btn.primary {
+    color: #FFFFFF;
+    background-color: #455877; }
+
 .ic-bt {
   text-decoration: none; }
   .ic-bt.default {
@@ -175,7 +198,7 @@ table {
   background-color: #455877;
   height: 50px;
   overflow: hidden;
-  color: #FFF;
+  color: #FFFFFF;
   font-family: "Open sans";
   font-size: 14px; }
 
@@ -187,7 +210,7 @@ table {
   height: 50px; }
 
 .header-logo {
-  font-size: 17px; }
+  font-size: 18px; }
 
 .header--box {
   height: 50px; }
@@ -219,6 +242,24 @@ table {
 
 .menu-ic--white {
   color: #fff; }
+
+.footer-section {
+  background-color: #edeef7;
+  height: 50px;
+  overflow: hidden;
+  color: #FFFFFF;
+  font-family: "Open sans";
+  font-size: 14px; }
+
+.footer {
+  position: relative;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 50px; }
+
+.footer-text {
+  color: #455877; }
 
 .cards-container {
   margin-top: 20px; }
@@ -266,9 +307,20 @@ table {
     height: 220px;
     top: -22px;
     right: 20px; }
+    @media only screen and (max-width: 1080px) {
+      .card-item-right.feed {
+        width: 155px;
+        height: 220px;
+        position: relative;
+        top: 0;
+        margin-left: 50%;
+        left: -75px; } }
   .card-item-right.notification {
     width: auto;
     height: auto; }
+    @media only screen and (max-width: 1110px) {
+      .card-item-right.notification {
+        display: none; } }
 
 .card-item-left {
   box-sizing: border-box;
@@ -325,14 +377,14 @@ table {
 
 .tagging {
   margin-left: 0; }
-  .tagging > .tag:not(:first-child) {
-    margin-left: 5px; }
   .tagging > .tag {
     display: inline-block;
     font-weight: 600;
     padding: 5px 10px;
     line-height: 15px;
-    border-radius: 2px; }
+    border-radius: 2px;
+    margin-top: 9px;
+    margin-right: 5px; }
     .tagging > .tag.tag--blue {
       background-color: #94cdce;
       color: #FFFFFF; }

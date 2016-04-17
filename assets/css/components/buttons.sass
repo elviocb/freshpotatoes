@@ -1,6 +1,33 @@
+$button-height: 54px
+
+a.btn, button.btn, input[type=submit].btn
+  display: inline-block
+  padding: 0px 15px
+  text-align: center
+  height: $button-height
+  line-height: $button-height
+  font-family: $font-family-primary
+  font-size: $font-size-medium
+  border: none
+  border-radius: 2px
+  white-space: nowrap
+
+  &.btn-large
+    height: 55px
+    line-height: 55px
+
+  &:focus
+    outline: none
+
+  &.primary
+    color: $color-white
+    background-color: $color-primary
+
 .ic-bt
   text-decoration: none
   &.default
     color: $color-darker-gray
     &:hover
       color: $color-primary
+
+
