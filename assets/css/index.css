@@ -124,6 +124,22 @@ table {
 
   .large-Grid--1of4 > .Grid-cell {
     flex: 0 0 25%; } }
+.strong {
+  font-weight: bold; }
+
+.container {
+  margin: auto;
+  width: 80%; }
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative; }
+
+.justify-content {
+  justify-content: space-between; }
+
 /* Default ______________________ */
 .strong {
   font-weight: bold; }
@@ -140,6 +156,13 @@ table {
 
 .justify-content {
   justify-content: space-between; }
+
+.ic-bt {
+  text-decoration: none; }
+  .ic-bt.default {
+    color: #A3ADB3; }
+    .ic-bt.default:hover {
+      color: #455877; }
 
 /* Header ______________________ */
 .header-section {
@@ -188,3 +211,91 @@ table {
 
 .menu-ic--white {
   color: #fff; }
+
+.feed {
+  margin-top: 20px; }
+
+.feed-title {
+  color: #444444;
+  font-family: "open sans", "Helvetica";
+  font-size: 12px; }
+
+.feed-card {
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: relative;
+  max-width: 580px;
+  border: 2px solid black;
+  margin: 20px 20px 40px 78px; }
+
+.feed-card-content {
+  padding: 20px;
+  max-height: auto;
+  font-family: "open sans", "Helvetica"; }
+
+.feed-card-action {
+  box-sizing: border-box;
+  padding: 10px 50px;
+  width: 100%;
+  border-top: 2px solid black; }
+
+.feed-card-movie-thumb {
+  position: absolute;
+  width: 155px;
+  height: 220px;
+  background-color: #455877;
+  top: -22px;
+  right: 20px; }
+
+.feed-card-profile-thumb {
+  box-sizing: border-box;
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 35px;
+  width: 60px;
+  height: 60px;
+  background-color: #F5F7F9;
+  top: -2px;
+  left: -78px; }
+
+.label {
+  margin: 20px 0 30px 0; }
+  .label:first-child {
+    margin: 0; }
+
+.label-title {
+  color: #000000;
+  display: inline-block;
+  margin: 0 0 5px 0; }
+  .label-title.largest {
+    font-size: 22px; }
+  .label-title.larger {
+    font-size: 18px; }
+  .label-title.medium {
+    font-size: 16px; }
+  .label-title.smaller {
+    font-size: 14px; }
+
+.label-subtitle {
+  color: #94cdce;
+  display: block; }
+  .label-subtitle.larger {
+    font-size: 18px; }
+  .label-subtitle.medium {
+    font-size: 16px; }
+  .label-subtitle.smaller {
+    font-size: 14px; }
+
+.tagging {
+  margin-left: 0; }
+  .tagging > .tag:not(:first-child) {
+    margin-left: 5px; }
+  .tagging > .tag {
+    display: inline-block;
+    font-weight: 600;
+    padding: 5px 10px;
+    line-height: 15px;
+    border-radius: 2px; }
+    .tagging > .tag.tag--blue {
+      background-color: #94cdce;
+      color: #FFFFFF; }

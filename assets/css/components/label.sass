@@ -1,0 +1,47 @@
+.label
+  margin: $space-larger 0 $space-largest 0
+  &:first-child
+    margin: 0
+
+.label-title
+  color: $color-black
+  display: inline-block
+  margin: 0 0 $space-smaller 0
+  &.largest
+    font-size: $font-size-largest
+  &.larger
+    font-size: $font-size-larger
+  &.medium
+    font-size: $font-size-medium
+  &.smaller
+    font-size: $font-size-smaller
+
+.label-subtitle
+  color: $color-secondary
+  display: block
+  &.larger
+    font-size: $font-size-larger
+  &.medium
+    font-size: $font-size-medium
+  &.smaller
+    font-size: $font-size-smaller
+
+.tagging
+  margin-left: 0
+  > .tag:not(:first-child)
+    margin-left: $space-smaller
+  > .tag
+    display: inline-block
+    font-weight: $font-weight-semibold
+    padding: $space-smaller $space-medium
+    line-height: 15px
+    border-radius: 2px
+    &.tag--blue
+      background-color: $color-secondary
+      color: $color-white
+
+
+
+
+
+
