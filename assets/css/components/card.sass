@@ -1,0 +1,79 @@
+$feed-item-left-spacing: 78px
+$notification-item-left-spacing: 58px
+
+.cards-container
+  margin-top: $space-larger
+
+.cards-container-title
+  color: $color-darkest-gray
+  font-family: $font-family-primary
+  font-size: $font-size-smallest
+
+.card
+  border: 2px solid black
+  box-sizing: border-box
+  position: relative
+  max-width: 580px
+  &.feed
+    margin: 20px 0 40px $feed-item-left-spacing
+    border-radius: 5px
+    margin-right: 40px
+  &.notification
+    margin: 20px 0 40px $notification-item-left-spacing
+    border: none
+    margin-bottom: 20px
+
+
+.card-content
+  max-height: auto
+  font-family: $font-family-primary
+  color: $color-darkest-gray
+  &.feed
+    padding: 0 20px 20px 20px
+  &.notification
+    padding: 0 0 10px 0
+
+.card-action
+  box-sizing: border-box
+  padding: 10px 50px
+  width: 100%
+  border-top: 2px solid black
+
+.card-item-right
+  position: absolute
+  top: 0
+  right: 0
+  &.feed
+    width: 155px
+    height: 220px
+    top: -22px
+    right: 20px
+  &.notification
+    width: auto
+    height: auto
+
+
+.card-item-left
+  box-sizing: border-box
+  position: absolute
+  width: 60px
+  height: auto
+  top: -2px
+  left: 0
+  text-align: center
+  &.feed
+    background-color: $color-lighter-gray
+    border: 2px solid black
+    border-radius: 35px
+    width: 60px
+    height: 60px
+    left: -$feed-item-left-spacing
+  &.notification
+    border: none
+    border-radius: 0
+    width: 40px
+    top: 2px
+    font-size: $font-size-smaller
+    left: -$notification-item-left-spacing
+
+

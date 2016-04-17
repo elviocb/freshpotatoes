@@ -4,6 +4,7 @@ head
   meta(charset="UTF-8")
   title Project Name
   link(rel="stylesheet", href="./assets/css/index.css")
+  link(rel="stylesheet", href="./bower_components/gridism/gridism.css")
   link(rel="stylesheet", href="./bower_components/fontawesome/css/font-awesome.min.css")
 body
   .header-section
@@ -13,7 +14,7 @@ body
           .header-item.header-logo
             h3.strong fresh
             | potatoes
-          .header-item
+          .header-item.no-padding
             .flex-row.header--box
               .header-item.header-item--separator.v-expanded
                 .flex-row
@@ -22,45 +23,69 @@ body
               .header-item.header-item--separator.last.v-expanded
                   i.fa.fa-search.fa-2x.menu-ic.menu-ic--white
   .container
-    .feed
-      h3.feed-title.strong SEE WHAT YOUR FRIENDS HAVE BEEN WATCHING
-      .feed-card
-        .feed-card-content
-          .feed-card-profile-thumb
-          img.feed-card-movie-thumb(src="/assets/imgs/movie-thumb.png")
-          .label
-            h3.label-title.medium.strong Victoria Young
-            |  liked a movie
-            p.label-subtitle.smaller 1 hour ago
-          .label
-            h3.label-title.largest 10 Cloverfield Lane
-            p.label-subtitle.smaller John Goodman, Mary Elizabeth Winstead
-          .tagging
-            .tag.tag--blue DRAMA
-            .tag.tag--blue HORROR
-            .tag.tag--blue MISTERY
-        .feed-card-action
-          .flex-row.justify-content
-            a(href="#").ic-bt.default.fa.fa-plus.fa-2x
-            a(href="#").ic-bt.default.fa.fa-thumbs-up.fa-2x
-            a(href="#").ic-bt.default.fa.fa-thumbs-down.fa-2x
-      .feed-card
-        .feed-card-content
-          .feed-card-profile-thumb
-          img.feed-card-movie-thumb(src="/assets/imgs/movie-thumb.png")
-          .label
-            h3.label-title.medium.strong Victoria Young
-            |  liked a movie
-            p.label-subtitle.smaller 1 hour ago
-          .label
-            h3.label-title.largest 10 Cloverfield Lane
-            p.label-subtitle.smaller John Goodman, Mary Elizabeth Winstead
-          .tagging
-            .tag.tag--blue DRAMA
-            .tag.tag--blue HORROR
-            .tag.tag--blue MISTERY
-        .feed-card-action
-          .flex-row.justify-content
-            a(href="#").ic-bt.default.fa.fa-plus.fa-2x
-            a(href="#").ic-bt.default.fa.fa-thumbs-up.fa-2x
-            a(href="#").ic-bt.default.fa.fa-thumbs-down.fa-2x
+    .grid
+      .cards-container.unit.no-gutters.two-thirds
+        h3.cards-container-title.strong SEE WHAT YOUR FRIENDS HAVE BEEN WATCHING
+        .card.feed
+          .card-content.feed
+            .card-item-left.feed
+            img.card-item-right.feed(src="/assets/imgs/movie-thumb.png")
+            .label
+              h3.label-title.medium.strong Victoria Young
+              |  liked a movie
+              p.label-subtitle.smaller 1 hour ago
+            .label
+              h3.label-title.largest 10 Cloverfield Lane
+              p.label-subtitle.smaller John Goodman, Mary Elizabeth Winstead
+            .tagging
+              .tag.tag--blue DRAMA
+              .tag.tag--blue HORROR
+              .tag.tag--blue MISTERY
+          .card-action
+            .flex-row.justify-content
+              a(href="#").ic-bt.default.fa.fa-plus.fa-2x
+              a(href="#").ic-bt.default.fa.fa-thumbs-up.fa-2x
+              a(href="#").ic-bt.default.fa.fa-thumbs-down.fa-2x
+
+      .cards-container.unit.no-gutters.one-third
+        h3.cards-container-title.strong MOVIES YOU'VE WATCHED
+        .card.notification
+          .card-content.notification
+            .card-item-left.notification
+              img(src="/assets/imgs/calendar.png")
+              p.strong APR 2016
+            .label
+              h3.label-title.larger.regular Super 8
+              p.label-subtitle.smallest Elle Fanning, AJ Michalka
+              .card-item-right
+                a(href="#").ic-bt.default.fa.fa-thumbs-up.fa-2x
+            .label
+              h3.label-title.larger.regular 10 Cloverfield Lane
+              p.label-subtitle.smallest John Goodman, Mary Elizabeth
+              .card-item-right.notification
+                a(href="#").ic-bt.default.fa.fa-thumbs-up.fa-2x
+            .label
+              h3.label-title.larger.regular District 9
+              p.label-subtitle.smallest Sharlto Copley, David James
+              .card-item-right.notification
+                a(href="#").ic-bt.default.fa.fa-thumbs-up.fa-2x
+        .card.notification
+          .card-content.notification
+            .card-item-left.notification
+              img(src="/assets/imgs/calendar.png")
+              p.strong MAR 2016
+            .label
+              h3.label-title.larger.regular Super 8
+              p.label-subtitle.smallest Elle Fanning, AJ Michalka
+              .card-item-right
+                a(href="#").ic-bt.default.fa.fa-thumbs-up.fa-2x
+            .label
+              h3.label-title.larger.regular 10 Cloverfield Lane
+              p.label-subtitle.smallest John Goodman, Mary Elizabeth
+              .card-item-right.notification
+                a(href="#").ic-bt.default.fa.fa-thumbs-up.fa-2x
+            .label
+              h3.label-title.larger.regular District 9
+              p.label-subtitle.smallest Sharlto Copley, David James
+              .card-item-right.notification
+                a(href="#").ic-bt.default.fa.fa-thumbs-up.fa-2x

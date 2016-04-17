@@ -10,6 +10,7 @@
     "tests"
   ],
   "dependencies": {
-    "fontawesome": "~4.6.1"
+    "fontawesome": "~4.6.1",
+    "gridism": "~0.2.1"
   }
 }

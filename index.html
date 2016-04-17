@@ -4,6 +4,7 @@
   <meta charset="UTF-8"/>
   <title>Project Name</title>
   <link rel="stylesheet" href="./assets/css/index.css"/>
+  <link rel="stylesheet" href="./bower_components/gridism/gridism.css"/>
   <link rel="stylesheet" href="./bower_components/fontawesome/css/font-awesome.min.css"/>
 </head>
 <body>
@@ -14,7 +15,7 @@
           <div class="header-item header-logo">
             <h3 class="strong">fresh</h3>potatoes
           </div>
-          <div class="header-item">
+          <div class="header-item no-padding">
             <div class="flex-row header--box">
               <div class="header-item header-item--separator v-expanded">
                 <div class="flex-row"><i class="fa fa-user fa-2x menu-ic--text menu-ic--white"></i><span>Hello, user!</span></div>
@@ -27,48 +28,76 @@
     </div>
   </div>
   <div class="container">
-    <div class="feed">
-      <h3 class="feed-title strong">SEE WHAT YOUR FRIENDS HAVE BEEN WATCHING</h3>
-      <div class="feed-card">
-        <div class="feed-card-content">
-          <div class="feed-card-profile-thumb"></div><img src="/assets/imgs/movie-thumb.png" class="feed-card-movie-thumb"/>
-          <div class="label">
-            <h3 class="label-title medium strong">Victoria Young</h3> liked a movie
-            <p class="label-subtitle smaller">1 hour ago</p>
+    <div class="grid">
+      <div class="cards-container unit no-gutters two-thirds">
+        <h3 class="cards-container-title strong">SEE WHAT YOUR FRIENDS HAVE BEEN WATCHING</h3>
+        <div class="card feed">
+          <div class="card-content feed">
+            <div class="card-item-left feed"></div><img src="/assets/imgs/movie-thumb.png" class="card-item-right feed"/>
+            <div class="label">
+              <h3 class="label-title medium strong">Victoria Young</h3> liked a movie
+              <p class="label-subtitle smaller">1 hour ago</p>
+            </div>
+            <div class="label">
+              <h3 class="label-title largest">10 Cloverfield Lane</h3>
+              <p class="label-subtitle smaller">John Goodman, Mary Elizabeth Winstead</p>
+            </div>
+            <div class="tagging">
+              <div class="tag tag--blue">DRAMA</div>
+              <div class="tag tag--blue">HORROR</div>
+              <div class="tag tag--blue">MISTERY</div>
+            </div>
           </div>
-          <div class="label">
-            <h3 class="label-title largest">10 Cloverfield Lane</h3>
-            <p class="label-subtitle smaller">John Goodman, Mary Elizabeth Winstead</p>
+          <div class="card-action">
+            <div class="flex-row justify-content"><a href="#" class="ic-bt default fa fa-plus fa-2x"></a><a href="#" class="ic-bt default fa fa-thumbs-up fa-2x"></a><a href="#" class="ic-bt default fa fa-thumbs-down fa-2x"></a></div>
           </div>
-          <div class="tagging">
-            <div class="tag tag--blue">DRAMA</div>
-            <div class="tag tag--blue">HORROR</div>
-            <div class="tag tag--blue">MISTERY</div>
-          </div>
-        </div>
-        <div class="feed-card-action">
-          <div class="flex-row justify-content"><a href="#" class="ic-bt default fa fa-plus fa-2x"></a><a href="#" class="ic-bt default fa fa-thumbs-up fa-2x"></a><a href="#" class="ic-bt default fa fa-thumbs-down fa-2x"></a></div>
         </div>
       </div>
-      <div class="feed-card">
-        <div class="feed-card-content">
-          <div class="feed-card-profile-thumb"></div><img src="/assets/imgs/movie-thumb.png" class="feed-card-movie-thumb"/>
-          <div class="label">
-            <h3 class="label-title medium strong">Victoria Young</h3> liked a movie
-            <p class="label-subtitle smaller">1 hour ago</p>
-          </div>
-          <div class="label">
-            <h3 class="label-title largest">10 Cloverfield Lane</h3>
-            <p class="label-subtitle smaller">John Goodman, Mary Elizabeth Winstead</p>
-          </div>
-          <div class="tagging">
-            <div class="tag tag--blue">DRAMA</div>
-            <div class="tag tag--blue">HORROR</div>
-            <div class="tag tag--blue">MISTERY</div>
+      <div class="cards-container unit no-gutters one-third">
+        <h3 class="cards-container-title strong">MOVIES YOU'VE WATCHED</h3>
+        <div class="card notification">
+          <div class="card-content notification">
+            <div class="card-item-left notification"><img src="/assets/imgs/calendar.png"/>
+              <p class="strong">APR 2016</p>
+            </div>
+            <div class="label">
+              <h3 class="label-title larger regular">Super 8</h3>
+              <p class="label-subtitle smallest">Elle Fanning, AJ Michalka</p>
+              <div class="card-item-right"><a href="#" class="ic-bt default fa fa-thumbs-up fa-2x"></a></div>
+            </div>
+            <div class="label">
+              <h3 class="label-title larger regular">10 Cloverfield Lane</h3>
+              <p class="label-subtitle smallest">John Goodman, Mary Elizabeth</p>
+              <div class="card-item-right notification"><a href="#" class="ic-bt default fa fa-thumbs-up fa-2x"></a></div>
+            </div>
+            <div class="label">
+              <h3 class="label-title larger regular">District 9</h3>
+              <p class="label-subtitle smallest">Sharlto Copley, David James</p>
+              <div class="card-item-right notification"><a href="#" class="ic-bt default fa fa-thumbs-up fa-2x"></a></div>
+            </div>
           </div>
         </div>
-        <div class="feed-card-action">
-          <div class="flex-row justify-content"><a href="#" class="ic-bt default fa fa-plus fa-2x"></a><a href="#" class="ic-bt default fa fa-thumbs-up fa-2x"></a><a href="#" class="ic-bt default fa fa-thumbs-down fa-2x"></a></div>
+        <div class="card notification">
+          <div class="card-content notification">
+            <div class="card-item-left notification"><img src="/assets/imgs/calendar.png"/>
+              <p class="strong">MAR 2016</p>
+            </div>
+            <div class="label">
+              <h3 class="label-title larger regular">Super 8</h3>
+              <p class="label-subtitle smallest">Elle Fanning, AJ Michalka</p>
+              <div class="card-item-right"><a href="#" class="ic-bt default fa fa-thumbs-up fa-2x"></a></div>
+            </div>
+            <div class="label">
+              <h3 class="label-title larger regular">10 Cloverfield Lane</h3>
+              <p class="label-subtitle smallest">John Goodman, Mary Elizabeth</p>
+              <div class="card-item-right notification"><a href="#" class="ic-bt default fa fa-thumbs-up fa-2x"></a></div>
+            </div>
+            <div class="label">
+              <h3 class="label-title larger regular">District 9</h3>
+              <p class="label-subtitle smallest">Sharlto Copley, David James</p>
+              <div class="card-item-right notification"><a href="#" class="ic-bt default fa fa-thumbs-up fa-2x"></a></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
