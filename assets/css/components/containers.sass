@@ -1,3 +1,14 @@
+$container-medium-screen: "only screen and (max-width : 900px)"
+$container-smaller-screen: "only screen and (max-width : 568px)"
+
+.container
+  margin: auto
+  width: 80%
+  @media #{$container-medium-screen}
+    width: 85%
+  @media #{$container-smaller-screen}
+    width: 95%
+
 .container-padded
   position: relative
   margin-top: $space-larger
@@ -9,6 +20,7 @@
     color: $color-darkest-gray
     font-size: $font-size-larger
     line-height: $font-size-largest
+    margin-right: $space-medium
 
 .container-light
   >.item

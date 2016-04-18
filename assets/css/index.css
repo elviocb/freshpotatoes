@@ -124,18 +124,32 @@ table {
 
   .large-Grid--1of4 > .Grid-cell {
     flex: 0 0 25%; } }
-.container {
-  margin: auto;
-  width: 80%; }
-
 .flex-row {
+  position: relative;
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-flex-direction: row;
   flex-direction: row;
-  position: relative; }
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .justify-content {
+  -webkit-justify-content: space-between;
   justify-content: space-between; }
+
+.justify-around {
+  -webkit-justify-content: space-around;
+  justify-content: space-around; }
+
+.justify-start {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start; }
+
+.justify-end {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end; }
 
 .regular {
   font-weight: 400; }
@@ -152,13 +166,26 @@ table {
 .expanded {
   width: 100%; }
 
+.flex-item.flex-25 {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-basis: 25%;
+  flex-basis: 25%; }
+
+.profile-circular {
+  background-color: #F5F7F9;
+  border: 2px solid #444444;
+  display: inline-block;
+  margin: 0 0 10px 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 75px; }
+
 /* Default ______________________ */
 .strong {
   font-weight: bold; }
-
-.container {
-  margin: auto;
-  width: 80%; }
 
 .flex-row {
   display: flex;
@@ -168,6 +195,16 @@ table {
 
 .justify-content {
   justify-content: space-between; }
+
+.container {
+  margin: auto;
+  width: 80%; }
+  @media only screen and (max-width: 900px) {
+    .container {
+      width: 85%; } }
+  @media only screen and (max-width: 568px) {
+    .container {
+      width: 95%; } }
 
 .container-padded {
   position: relative;
@@ -179,7 +216,8 @@ table {
   .container-padded > p {
     color: #444444;
     font-size: 18px;
-    line-height: 22px; }
+    line-height: 22px;
+    margin-right: 10px; }
 
 .container-light > .item {
   margin-top: 10px; }
@@ -371,7 +409,7 @@ a.btn, button.btn, input[type=submit].btn {
 
 .card-face {
   box-sizing: border-box;
-  width: 166px;
+  width: 160px;
   display: inline-block;
   margin-right: 20px;
   padding-top: 10px 0; }
