@@ -184,18 +184,6 @@ table {
   border-radius: 75px; }
 
 /* Default ______________________ */
-.strong {
-  font-weight: bold; }
-
-.flex-row {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  position: relative; }
-
-.justify-content {
-  justify-content: space-between; }
-
 .container {
   margin: auto;
   width: 80%; }
@@ -227,7 +215,7 @@ h1, h2, h3, h4, h5, p {
 
 a.btn, button.btn, input[type=submit].btn {
   display: inline-block;
-  padding: 0px 15px;
+  padding: 0;
   text-align: center;
   height: 54px;
   line-height: 54px;
@@ -235,7 +223,10 @@ a.btn, button.btn, input[type=submit].btn {
   font-size: 16px;
   border: none;
   border-radius: 2px;
-  white-space: nowrap; }
+  white-space: nowrap;
+  text-decoration: none; }
+  a.btn.btn-padding, button.btn.btn-padding, input[type=submit].btn.btn-padding {
+    padding: 0px 15px; }
   a.btn.btn-large, button.btn.btn-large, input[type=submit].btn.btn-large {
     height: 65px;
     line-height: 55px;
@@ -430,6 +421,7 @@ a.btn, button.btn, input[type=submit].btn {
     margin: 0; }
 
 .label-title {
+  color: #444444;
   display: inline-block;
   margin: 0 0 5px 0; }
   .label-title.largest {
