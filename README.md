@@ -4,6 +4,8 @@
 
 ## Project
 
+### Description
+Responsive site interface developed using jade template engine and sass
 
 ### Running the project
 
