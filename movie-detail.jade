@@ -41,13 +41,13 @@ body
         .container-padded
           h3.strong DESCRIPTION
           p Soon after leaving her fiancé Michelle is involved in a car accident. She awakens to find herself sharing an underground bunker with Howard and Emmett. has she been saved from an apocalyptical event as Howard & Emmett tell her or are there other motives for her being held against her will?
-        .container-light
-          h3.item.highlight
-            span.strong Director:
-            span  Dan Tratchtenberg
-          h3.item.highlight
-            span.strong Writers:
-            span  Josh Campbell (story), Matthew Stuecken (story)
+        //- .container-light
+        //-   h3.item.highlight
+        //-     span.strong Director:
+        //-     span  Dan Tratchtenberg
+        //-   h3.item.highlight
+        //-     span.strong Writers:
+        //-     span  Josh Campbell (story), Matthew Stuecken (story)
         .container-padded
           h3.strong ACTORS
           .card-face
@@ -62,7 +62,17 @@ body
           .card-face
             img.card-face-thumb(src="/assets/imgs/movie-thumb.png")
             h3 John Goodman
-
+    .grid
+      .whole
+        .container-padded
+          h3.strong SCREENINGS AROUND YOUR AREA
+          .search-container
+            .search-box
+              input(placeholder="Please enter a location or zipcode")
+              i.fa.fa-search.fa-2x.search-ic
+          .container-padded
+            img.expanded(src="/assets/imgs/map.png")
+        .container-padded
 
   .footer-section
     .container

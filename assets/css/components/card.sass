@@ -93,13 +93,15 @@ $card-notification-screen: "only screen and (max-width : 1110px)"
     left: -$notification-item-left-spacing
 
 .card-face
+  box-sizing: border-box
   width: 166px
   display: inline-block
   margin-right: $space-larger
-  padding: $space-medium 0
+  padding-top: $space-medium 0
   > h3
     font-size: $font-size-larger
-    padding: $space-smaller
     text-align: center
+    line-height: 20px
+    padding: $space-smaller 0 $space-medium 0
 .card-face-thumb
   width: 100%

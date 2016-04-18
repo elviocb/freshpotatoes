@@ -1,0 +1,18 @@
+.search-box {
+  position: relative;
+  margin-left: 40px; }
+  .search-box > input {
+    background-color: #eee;
+    position: relative;
+    box-sizing: border-box;
+    width: 350px;
+    height: 55px;
+    padding: 15px;
+    border: 2px solid #555;
+    border-radius: 3px;
+    font-size: 16px; }
+  .search-box > .search-ic {
+    color: #555;
+    position: absolute;
+    top: 7px;
+    left: -38px; }
