@@ -146,6 +146,9 @@ table {
 .semi-strong {
   font-weight: 600; }
 
+.highlight {
+  color: #94cdce; }
+
 .expanded {
   width: 100%; }
 
@@ -165,6 +168,23 @@ table {
 
 .justify-content {
   justify-content: space-between; }
+
+.container-padded {
+  margin-top: 20px;
+  padding: 30px 0 30px 0; }
+  .container-padded > h3 {
+    margin-bottom: 30px;
+    color: #444444; }
+  .container-padded > p {
+    color: #444444;
+    font-size: 18px;
+    line-height: 22px; }
+
+.container-light > .item {
+  margin-top: 10px; }
+
+h1, h2, h3, h4, h5, p {
+  font-family: "open sans", "Helvetica"; }
 
 a.btn, button.btn, input[type=submit].btn {
   display: inline-block;
@@ -347,6 +367,19 @@ a.btn, button.btn, input[type=submit].btn {
     top: 2px;
     font-size: 14px;
     left: -58px; }
+
+.card-face {
+  width: 166px;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px 0; }
+  .card-face > h3 {
+    font-size: 18px;
+    padding: 5px;
+    text-align: center; }
+
+.card-face-thumb {
+  width: 100%; }
 
 .label {
   font-family: "open sans", "Helvetica";
