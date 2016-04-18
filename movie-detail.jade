@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  title Project Name
+  link(rel="stylesheet", href="./assets/css/index.css")
+  link(rel="stylesheet", href="./bower_components/gridism/gridism.css")
+  link(rel="stylesheet", href="./bower_components/fontawesome/css/font-awesome.min.css")
+body
+  .header-section
+    .container
+      .header
+        .flex-row.justify-content
+          .header-item.header-logo
+            h3.strong fresh
+            | potatoes
+          .header-item.no-padding
+            .flex-row.header--box
+              .header-item.header-item--separator.v-expanded
+                .flex-row
+                  i.fa.fa-user.fa-2x.menu-ic--text.menu-ic--white
+                  span Hello, user!
+              .header-item.header-item--separator.last.v-expanded
+                  i.fa.fa-search.fa-2x.menu-ic.menu-ic--white
+  .container
+    .hero-section
+      img.hero-img(src="/assets/imgs/movie-hero-thumb.png")
+      .hero-label
+        .card-content.detail
+          .label
+            h3.label-title.largest 10 Cloverfield Lane
+            p.label-subtitle.smaller John Goodman, Mary Elizabeth Winstead
+          .tagging
+            .tag.tag--blue DRAMA
+            .tag.tag--blue HORROR
+            .tag.tag--blue MISTERY
+      .hero-action
+        button.btn.btn-large.primary.expanded(href="#") Add movie to your diary
+
+  .footer-section
+    .container
+      .footer.flex-row
+        h3.footer-text.semi-strong 2016 Fresh Potatoes. All rights reserved. Some lefts reserved too.

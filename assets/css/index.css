@@ -178,8 +178,9 @@ a.btn, button.btn, input[type=submit].btn {
   border-radius: 2px;
   white-space: nowrap; }
   a.btn.btn-large, button.btn.btn-large, input[type=submit].btn.btn-large {
-    height: 55px;
-    line-height: 55px; }
+    height: 65px;
+    line-height: 55px;
+    font-size: 18px; }
   a.btn:focus, button.btn:focus, input[type=submit].btn:focus {
     outline: none; }
   a.btn.primary, button.btn.primary, input[type=submit].btn.primary {
@@ -291,6 +292,8 @@ a.btn, button.btn, input[type=submit].btn {
     padding: 0 20px 20px 20px; }
   .card-content.notification {
     padding: 0 0 10px 0; }
+  .card-content.detail {
+    padding: 20px 0; }
 
 .card-action {
   box-sizing: border-box;
@@ -346,6 +349,7 @@ a.btn, button.btn, input[type=submit].btn {
     left: -58px; }
 
 .label {
+  font-family: "open sans", "Helvetica";
   position: relative;
   margin: 20px 0 30px 0; }
   .label:first-child {
@@ -376,7 +380,8 @@ a.btn, button.btn, input[type=submit].btn {
     font-size: 12px; }
 
 .tagging {
-  margin-left: 0; }
+  margin-left: 0;
+  font-family: "open sans", "Helvetica"; }
   .tagging > .tag {
     display: inline-block;
     font-weight: 600;
@@ -388,3 +393,34 @@ a.btn, button.btn, input[type=submit].btn {
     .tagging > .tag.tag--blue {
       background-color: #94cdce;
       color: #FFFFFF; }
+
+.hero-section {
+  position: relative;
+  width: 100%; }
+
+.hero-img {
+  width: 100%;
+  max-height: 600px; }
+
+.hero-action {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  min-width: 300px; }
+  @media only screen and (max-width: 900px) {
+    .hero-action {
+      position: relative;
+      bottom: 0;
+      right: 0; } }
+
+.bt-hero {
+  min-width: 300px; }
+
+.hero-label {
+  position: absolute;
+  bottom: 0;
+  left: 20px; }
+  @media only screen and (max-width: 900px) {
+    .hero-label {
+      position: relative;
+      left: 0; } }

@@ -1,0 +1,40 @@
+// Media Queries
+$hero-mobile: "only screen and (max-width : 900px)"
+
+.hero-section
+  position: relative
+  width: 100%
+.hero-img
+  width: 100%
+  max-height: 600px
+// .hero-action
+//   position: absolute
+//   width: 360px
+//   bottom: 20px
+//   right: 20px
+
+.hero-action
+  position: absolute
+  bottom: 20px
+  right: 20px
+  min-width: 300px
+  @media #{$hero-mobile}
+    position: relative
+    bottom: 0
+    right: 0
+
+
+.bt-hero
+  min-width: 300px
+
+.hero-label
+  position: absolute
+  bottom: 0
+  left: 20px
+  @media #{$hero-mobile}
+    position: relative
+    left: 0
+
+
+
+
